@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'login.apps.LoginConfig',
     'mainsite.apps.MainsiteConfig',
-    
 ]
 
 MIDDLEWARE = [
@@ -121,3 +120,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "static"),
+#     '/static/',
+# ]
+# mysite/settings.py
+
+# 각 media 파일에 대한 URL Prefix
+MEDIA_URL = '/media/'
+
+# 업로드된 파일을 저장할 디렉토리 경로
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+AUTH_USER_MODEL='mainsite.User'
