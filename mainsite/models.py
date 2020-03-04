@@ -14,7 +14,9 @@ class User (AbstractUser) :
     gender = models.CharField(max_length=10, blank=True)
     location = models.CharField(max_length=30, blank=True)
     usercode = models.CharField(max_length=5, blank=True)
-    room = models.ForeignKey(Room, on_delete=models.CASCADE, blank=True)
+    room = models.ForeignKey(Room, on_delete=models.CASCADE, blank=True, null=True)
     position = models.CharField(max_length=20, blank=True)
+    is_passenger = models.BooleanField(default=True)
+    is_sailer = models.BooleanField(default=False)
 
 
