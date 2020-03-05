@@ -16,7 +16,6 @@ def sign_up_indata (request) :
     firstname = request.POST.get('Fname')
     lastname = request.POST.get('Lname')
 
-    if User.objects.filter(username = username)
     
 
 
