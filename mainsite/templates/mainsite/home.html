@@ -23,9 +23,11 @@
   <!-- Custom styles for this template -->
   <link href="/static/mainsite/css/coming-soon.min.css" rel="stylesheet">
 
+
 </head>
 
 <body>
+
 
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -57,18 +59,18 @@
   <div class="social-icons">
     <ul class="list-unstyled text-center mb-0">
       <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-twitter"></i>
+        <a href="{% url 'access_home' %}">
+          <i class="fas fa-home"></i>
         </a>
       </li>
       <li class="list-unstyled-item">
         <a href="#">
-          <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-sign-in-alt"></i>
         </a>
       </li>
       <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-instagram"></i>
+        <a href="{% url 'sign_up' %}">
+          <i class="fas fa-user-plus"></i>
         </a>
       </li>
     </ul>
@@ -80,6 +82,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="/static/mainsite/js/coming-soon.min.js"></script>
+
 
 </body>
 
